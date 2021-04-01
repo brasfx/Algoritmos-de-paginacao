@@ -13,11 +13,11 @@ for line in saida:
     mru = MRU(line[0],line[1],line[2])
    # nfu = NUF(line[0],line[1],line[2])
     if fifo < mru <= nfu:
-        menor = "fifo"
+        menor = "FIO"
     elif mru < fifo <= nfu:
-        menor = "mru"
+        menor = "MRU"
     elif nfu < fifo <= mru:
-        menor = "nfu"
+        menor = "MUF"
     else:
         menor = "empate"
     print(fifo,"|",mru,"|",nfu,"|",otimo,"|",menor)
