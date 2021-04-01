@@ -1,4 +1,3 @@
-from random import randint
 from FIFO import FIFO
 from MRU import MRU
 from NUF import NUF
@@ -9,8 +8,8 @@ saida = tratamento(readfile())
 nfu = 1000
 otimo = 1000
 for line in saida:
-    fifo = FIFO(line[0],line[1],line[2])
-    mru = MRU(line[0],line[1],line[2])
+    fifo = FIFO(line[0], line[1], line[2])
+    mru = MRU(line[0], line[1], line[2])
     #nfu = NUF(line[0],line[1],line[2])
     #otimo = Otimo(line[0],line[1],line[2])
     if fifo < mru <= nfu:
@@ -21,5 +20,4 @@ for line in saida:
         menor = "MUF"
     else:
         menor = "empate"
-    print(fifo,"|",mru,"|",nfu,"|",otimo,"|",menor)
-
+    print(fifo, "|", mru, "|", nfu, "|", otimo, "|", menor)
