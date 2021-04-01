@@ -22,14 +22,10 @@ def Otimo(moldura, processos, paginas):
                     if peso[p] > maior:
                         maior = peso[p]
                         pos = p
-                print(lista[pos])
-                for i in range(len(lista)):
-                    if lista[i]==maior:
-                        lista[i]=pagina
+                lista[pos] = pagina
                 peso.clear()
                 maior = 0
                 pos = 0
-        #print(lista)
         
         indiceatual = indiceatual + 1
 
