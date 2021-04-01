@@ -1,5 +1,7 @@
 from random import randint
-
+from FIFO import FIFO
+from MRU import MRU
+from NUF import NUF
 
 def readfile():  # retorna uma matriz de strings para representar o arquivo de processos
     result = []
@@ -19,12 +21,6 @@ def tratamento(arquivo):
             element[it] = eval(element[it])
     return arquivo
 
-def FIFO(moldura, processo, paginas):
-    print("teste")
-def MRU(moldura, processo, paginas):
-    print("teste")
-def NUF(moldura, processo, paginas):
-    print("teste")
 
 
 saida = tratamento(readfile())
@@ -32,3 +28,4 @@ for line in saida:
     print(line)
     for data in line:
         print(data)
+        FIFO(1,1,1)
