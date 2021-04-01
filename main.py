@@ -19,6 +19,16 @@ def tratamento(arquivo):
             element[it] = eval(element[it])
     return arquivo
 
+def FIFO(moldura, processo, paginas):
+    print("teste")
+def MRU(moldura, processo, paginas):
+    print("teste")
+def NUF(moldura, processo, paginas):
+    print("teste")
+
 
 saida = tratamento(readfile())
-print(saida)
+for line in saida:
+    print(line)
+    for data in line:
+        print(data)
