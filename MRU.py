@@ -1,2 +1,37 @@
 def MRU(moldura, processo, paginas):
-    print("teste")
+    lista = []
+    uso = []
+    menos = 0
+    pos = 0
+    troca = 0
+    for pagina in paginas:
+        found = 0
+        for i in range(len(lista)):
+            if lista[i]==pagina:
+                found = 1
+                uso[i] = 0
+            else:
+                uso[i] = uso[i] + 1
+        if len(lista)<moldura and found ==0:
+            lista.append(pagina)
+            uso.append(0)
+            troca = troca + 1
+            #print("add troca")
+        elif len(lista)==moldura and found == 0:
+            menos = uso[0]
+            pos = 0
+            for i in range(len(lista)):
+                if uso[i] > menos:
+                    menos = uso[i]
+                    pos = i
+            #print("troca")
+            #print(lista[pos])
+            #print("por")
+            #print(pagina)
+            uso[pos]=0
+            lista[pos] = pagina 
+            troca = troca + 1
+            #print(troca)
+
+        #print(lista)
+    return troca
