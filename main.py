@@ -14,7 +14,7 @@ for line in saida:
     #nfu = NUF(line[0],line[1],line[2])
     #otimo = Otimo(line[0],line[1],line[2])
     if fifo < mru <= nfu:
-        menor = "FIO"
+        menor = "FIFO"
     elif mru < fifo <= nfu:
         menor = "MRU"
     elif nfu < fifo <= mru:
