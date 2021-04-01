@@ -7,11 +7,12 @@ from tratamento import tratamento, readfile
 
 saida = tratamento(readfile())
 nfu = 1000
-otimo = "meh"
+otimo = 1000
 for line in saida:
     fifo = FIFO(line[0],line[1],line[2])
     mru = MRU(line[0],line[1],line[2])
-   # nfu = NUF(line[0],line[1],line[2])
+   #nfu = NUF(line[0],line[1],line[2])
+    #otimo = Otimo(line[0],line[1],line[2])
     if fifo < mru <= nfu:
         menor = "FIO"
     elif mru < fifo <= nfu:
