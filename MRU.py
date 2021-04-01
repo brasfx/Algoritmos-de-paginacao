@@ -16,7 +16,6 @@ def MRU(moldura, processo, paginas):
             lista.append(pagina)
             uso.append(0)
             troca = troca + 1
-            #print("add troca")
         elif len(lista)==moldura and found == 0:
             menos = uso[0]
             pos = 0
@@ -24,14 +23,9 @@ def MRU(moldura, processo, paginas):
                 if uso[i] > menos:
                     menos = uso[i]
                     pos = i
-            #print("troca")
-            #print(lista[pos])
-            #print("por")
-            #print(pagina)
             uso[pos]=0
             lista[pos] = pagina 
             troca = troca + 1
-            #print(troca)
 
-        #print(lista)
+
     return troca
