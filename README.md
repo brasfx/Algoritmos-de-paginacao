@@ -5,7 +5,7 @@
 FIFO (First In First Out)</br>
 MRU (Menos usado recentemente)</br>
 NUF (Não usado recentemente)</br>
-Ótimo</br></br>
+Ótimo</br>
 <h2>Descrição dos algortimos:</h2>
 
 1.FIFO:
