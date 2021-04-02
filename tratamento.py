@@ -1,6 +1,5 @@
 def readfile():  # retorna uma matriz de strings para representar o arquivo de processos
     result = []
-    #nome_do_arquivo = input('Digite o nome do arquivo:\n')
     proc = open('entrada.txt', 'r')
     proc = (proc.read()).splitlines()
     for line in proc:

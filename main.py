@@ -12,14 +12,14 @@ nfu = 1000
 for line in saida:
     fifo = FIFO(line[0], line[1], line[2])
     mru = MRU(line[0], line[1], line[2])
-    #nfu = NUF(line[0],line[1],line[2])
-    otimo = Otimo(line[0],line[1],line[2])
-    if fifo < mru <= nfu:
+    nuf = NUF(line[0], line[1], line[2])
+    otimo = Otimo(line[0], line[1], line[2])
+    if fifo < mru <= nuf:
         menor = "FIFO"
-    elif mru < fifo <= nfu:
+    elif mru < fifo <= nuf:
         menor = "MRU"
-    elif nfu < fifo <= mru:
-        menor = "MUF"
+    elif nuf < fifo <= mru:
+        menor = "NUF"
     else:
         menor = "empate"
-    print(fifo, "|", mru, "|", nfu, "|", otimo, "|", menor)
+    print(fifo, "|", mru, "|", nuf, "|", otimo, "|", menor)
