@@ -1,15 +1,15 @@
 def FIFO(count_moldura, processos, paginas):
-    miss = 0
+    miss = 0  # contador de trocas
 
-    molduras = []
+    molduras = []  # array pra inserir as paginas
 
     for pag in paginas:
-        if pag not in molduras:
+        if pag not in molduras:  # se a pagina não esta na moldura é incrementado o contador
             miss += 1
 
-            if len(molduras) == count_moldura:
-                molduras.pop(0)
+            if len(molduras) == count_moldura:  # se o tamanho das molduras for maximo
+                molduras.pop(0)  # retira o primeiro elemento
 
-            molduras.append(pag)
+            molduras.append(pag)  # adiciona nova pagina a moldura
 
     return miss

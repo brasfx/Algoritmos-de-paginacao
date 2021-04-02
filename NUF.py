@@ -1,10 +1,9 @@
 def NUF(moldura, processo, paginas):
-    print("teste")
-    lista = []
-    uso = []
-    menos = 0
-    pos = 0
-    troca = 0
+    lista = []  # lista para receber as paginas
+    uso = []  # contador da página
+    menos = 0  # pag menos acessada
+    pos = 0  # posicao menos acessado
+    troca = 0  # troca de pagina
     for pagina in paginas:
         found = 0
         for i in range(len(lista)):
@@ -14,7 +13,7 @@ def NUF(moldura, processo, paginas):
         if len(lista) < moldura and found == 0:
             lista.append(pagina)
             uso.append(0)
-            troca = troca + 1
+            troca += 1
         elif len(lista) == moldura and found == 0:
             menos = uso[0]
             pos = 0
@@ -24,7 +23,7 @@ def NUF(moldura, processo, paginas):
                     pos = i
             uso[pos] = 0
             lista[pos] = pagina
-            troca = troca + 1
+            troca += 1
         # print(lista)
         # print(uso)
 
