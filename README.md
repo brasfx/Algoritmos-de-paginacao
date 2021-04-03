@@ -7,7 +7,7 @@ MRU (Menos usado recentemente)</br>
 NUF (Não usado frequentemente)</br>
 Ótimo</br>
 
-<h2>Descrição dos programa principal:</h2>
+<h2>Descrição do programa principal:</h2>
 
 A aplicação principal (main.py) chama as funções de leitura de arquivo e tratamento a fim de receber a entrada do arquivo de texto. Então para cada linha deste arquivo os algoritmos FIFO, MRU e NUF são chamados e seus resultados recebidos, então são comparados e a saída é processada no cmd formatada da seguinte maneira:
 
