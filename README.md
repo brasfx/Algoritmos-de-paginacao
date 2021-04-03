@@ -37,4 +37,5 @@ Linux:</br>
 2. python3 main.py</br>
 </br>
 Windows:</br>
-Abrir a pasta do código e executar a main.py
+1. No terminal(CMD), navegar até o caminho do arquivo
+2. Executar no terminal o commando: main.py
