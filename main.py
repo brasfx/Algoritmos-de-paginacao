@@ -18,7 +18,7 @@ for line in saida:
         menor = "FIFO"
     elif mru < fifo and mru < nuf:
         menor = "MRU"
-    elif nuf < fifo and nuf <= mru:
+    elif nuf < fifo and nuf < mru:
         menor = "NUF"
     else:
         menor = "empate"
