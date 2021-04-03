@@ -37,5 +37,5 @@ Linux:</br>
 2. python3 main.py</br>
 </br>
 Windows:</br>
-1. No terminal(CMD), navegar até o caminho do arquivo
-2. Executar no terminal o commando: main.py
+1. No terminal(CMD), navegar até o caminho do arquivo</br>
+2. Executar no terminal o commando: main.py</br>
