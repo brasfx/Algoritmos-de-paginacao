@@ -14,11 +14,11 @@ for line in saida:
     mru = MRU(line[0], line[1], line[2])
     nuf = NUF(line[0], line[1], line[2])
     otimo = Otimo(line[0], line[1], line[2])
-    if fifo < mru <= nuf:
+    if fifo < mru and fifo < nuf:
         menor = "FIFO"
-    elif mru < fifo <= nuf:
+    elif mru < fifo and mru < nuf:
         menor = "MRU"
-    elif nuf < fifo <= mru:
+    elif nuf < fifo and nuf <= mru:
         menor = "NUF"
     else:
         menor = "empate"
