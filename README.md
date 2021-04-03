@@ -30,3 +30,11 @@ Não é necessária nenhuma interação do usuário, o programa se encerra após
   
 4.Ótimo:
   É efetuada um loop na lista de páginas, caso a página não esteja na lista um miss é contabilizado, se a lista não estiver cheia a página é adicionada a lista. Caso a lista esteja cheia um loop irá percorrer a lista e para cada página na lista sera efetuado outro loop para verificar quando aquela página será usada novamente, um peso é dado a cada página, a pagina com o peso maior será a que irá demorar mais para ser acessada novamente. É verificado qual página tem o maior peso e esta página é substituída, a lista de pesos então é zerada. Ao fim do loop inicial o contador do indice atual é incrementado.
+  
+<h2>Execução do código:</h2>
+Linux:</br>
+No terminal digita o caminho do arquivo
+python3 main.py
+</br>
+Windows:</br>
+Abrir a pasta do código e executar a main.py
