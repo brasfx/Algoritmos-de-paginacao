@@ -33,8 +33,8 @@ Não é necessária nenhuma interação do usuário, o programa se encerra após
   
 <h2>Execução do código:</h2>
 Linux:</br>
-No terminal digita o caminho do arquivo
-python3 main.py
+1. No terminal digitar o caminho do arquivo</br>
+2. python3 main.py
 </br>
 Windows:</br>
 Abrir a pasta do código e executar a main.py
